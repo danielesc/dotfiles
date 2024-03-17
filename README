@@ -32,3 +32,4 @@ sudo apt-get install ripgrep
 fd
 sudo apt install fd-find
 brew install fd
+

@@ -4,7 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=""
 
 #Plugins
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting) 
 source $ZSH/oh-my-zsh.sh
 
 #Star Ship
@@ -15,6 +15,10 @@ if [ "$(uname 2> /dev/null)" = "Linux" ]; then
     # LINUX CONFIG
 	echo "LINUX CONFIG"
     export PATH="$PATH:/opt/nvim-linux64/bin"
+
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 else
     # MAC CONFIG
     echo "MAC CONFIG"
@@ -39,8 +43,3 @@ else
     unset __conda_setup
     # <<< conda initialize <<<
 fi
-
-
-
-
-
