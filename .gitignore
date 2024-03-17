@@ -7,13 +7,6 @@
 !Readme
 !.tmux.conf
 !.zshrc
-!.config/kitty/
-!.config/kitty/Tokio.conf
-!.config/kityy/kitty.conf
-!.config/kityy/current-theme.conf
-!.config/kitty/themes/tokio.conf
-
-!.config/nvim/**
 !.config/starship.toml
 
 
