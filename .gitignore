@@ -1,5 +1,6 @@
-# To ignore everything
+# To ignore
 *
+
 # To add
 
 !.git
@@ -9,5 +10,8 @@
 !.zshrc
 
 !.config
-!.config/starship.toml
-!.config/kitty/**
+!.config/**
+
+.config/github-copilot
+.config/wireshark
+.config/zed
