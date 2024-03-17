@@ -1,4 +1,4 @@
-# To ignore everythign
+# To ignore everything
 *
 # To add
 
@@ -7,6 +7,8 @@
 !Readme
 !.tmux.conf
 !.zshrc
+
+!.config
 !.config/starship.toml
 
-
+!.config/kitty
