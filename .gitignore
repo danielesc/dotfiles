@@ -10,5 +10,4 @@
 
 !.config
 !.config/starship.toml
-
-!.config/kitty
+!.config/kitty/**
