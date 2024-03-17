@@ -1,0 +1,16 @@
+# To ignore everythign
+*
+.config/*
+# To add
+
+!.git
+!.gitignore
+!Readme
+!.tmux.conf
+!.zshrc
+!.config
+!.config/kitty
+!.config/nvim
+!.config/starship.toml
+
+
