@@ -14,3 +14,21 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 install starship
 curl -sS https://starship.rs/install.sh | sh
+
+
+install nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+
+on ubuntu/mac need to install a c compiler
+sudo apt-get install build-essential
+
+Telescope stuffs
+ripgrep
+$ brew install ripgrep
+sudo apt-get install ripgrep
+
+fd
+sudo apt install fd-find
+brew install fd

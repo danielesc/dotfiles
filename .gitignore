@@ -2,10 +2,10 @@
 *
 
 # To add
-
+!setPlugins.sh
 !.git
 !.gitignore
-!Readme
+!README
 !.tmux.conf
 !.zshrc
 
