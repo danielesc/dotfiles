@@ -1,6 +1,5 @@
 # To ignore everythign
 *
-.config/*
 # To add
 
 !.git
@@ -8,9 +7,13 @@
 !Readme
 !.tmux.conf
 !.zshrc
-!.config
-!.config/kitty
-!.config/nvim
+!.config/kitty/
+!.config/kitty/Tokio.conf
+!.config/kityy/kitty.conf
+!.config/kityy/current-theme.conf
+!.config/kitty/themes/tokio.conf
+
+!.config/nvim/**
 !.config/starship.toml
 
 
