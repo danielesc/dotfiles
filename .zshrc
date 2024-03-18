@@ -13,9 +13,9 @@ eval "$(starship init zsh)"
 # BY OS SETUP
 if [ "$(uname 2> /dev/null)" = "Linux" ]; then
     # LINUX CONFIG
-	echo "LINUX CONFIG"
+    echo "LINUX CONFIG"
     export PATH="$PATH:/opt/nvim-linux64/bin"
-
+    . "$HOME/.cargo/env"
     export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
