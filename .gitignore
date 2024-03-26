@@ -16,3 +16,5 @@
 .config/wireshark
 .config/zed
 .config/go
+.config/.wrangler
+code
