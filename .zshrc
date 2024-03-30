@@ -21,6 +21,7 @@ if [ "$(uname 2> /dev/null)" = "Linux" ]; then
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
     export PATH=$PATH:/usr/local/go/bin
+    export PATH=$PATH:/snap/bin
 else
     # MAC CONFIG
     echo "MAC CONFIG"
