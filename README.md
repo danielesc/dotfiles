@@ -1,0 +1,41 @@
+Install Zsh
+
+Mac
+already runs zsh
+
+Ubuntu
+apt install zsh
+sudo chsh -s $(which zsh)
+
+
+oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+install starship
+curl -sS https://starship.rs/install.sh | sh
+
+TMUX
+sudo apt install tmux
+
+tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+install a plugin press prefix + I
+
+install nvim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
+
+on ubuntu/mac need to install a c compiler
+sudo apt-get install build-essential
+
+Telescope stuffs
+ripgrep
+$ brew install ripgrep
+sudo apt-get install ripgrep
+
+fd
+sudo apt install fd-find
+brew install fd
+
