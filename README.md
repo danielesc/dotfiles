@@ -39,3 +39,30 @@ fd
 sudo apt install fd-find
 brew install fd
 
+
+
+Windows terminal theme
+ref https://github.com/rebelot/kanagawa.nvim/blob/master/extras/windows_terminal.json
+ {
+        "background": "#181616",
+        "black": "#0d0c0c",
+        "brightBlack": "#a6a69c",
+        "blue": "#8ba4b0",
+        "brightBlue": "#7FB4CA",
+        "green": "#8a9a7b",
+        "brightGreen": "#87a987",
+        "purple": "#a292a3",
+        "brightPurple": "#8992a7",
+        "brightRed": "#E46876",
+        "red": "#c4746e",
+        "brightWhite": "#c5c9c5",
+        "white": "#C8C093",
+        "brightYellow": "#E6C384",
+        "yellow": "#c4b28a",
+        "brightCyan": "#7AA89F",
+        "cyan": "#8ea4a2",
+        "cursorColor": "#c5c9c5",
+        "foreground": "#C8C093",
+        "name": "KanagawaDragon",
+        "selectionBackground": "#223249"
+    }
