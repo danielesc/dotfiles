@@ -730,20 +730,22 @@ require("lazy").setup({
 		-- change the command in the config to whatever the name of that colorscheme is
 		--
 		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
-		"rebelot/kanagawa.nvim",
+		"0xstepit/flow.nvim",
 		lazy = false, -- make sure we load this during startup if it is your main colorscheme
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			-- Load the colorscheme here
-			vim.cmd.colorscheme("kanagawa-dragon")
+			vim.cmd.colorscheme("flow")
 
 			-- You can configure highlights by doing something like
 			vim.cmd.hi("Comment gui=none")
 		end,
 		opts = function()
 			return {
-				transparent = true,
-				theme = "dragon",
+				transparent = false, -- Set transparent background.
+				fluo_color = "pink", --  Fluo color: pink, yellow, orange, or green.
+				mode = "normal", -- Intensity of the palette: normal, bright, desaturate, or dark. Notice that dark is ugly!
+				aggressive_spell = false, -- Display colors for spell check.
 			}
 		end,
 	},
