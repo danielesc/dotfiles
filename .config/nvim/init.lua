@@ -579,6 +579,11 @@ require("lazy").setup({
 						},
 					},
 				},
+				eslint = {
+					on_init = function(client)
+						client.config.settings.workingDirectory = { directory = client.config.root_dir }
+					end,
+				},
 			}
 
 			-- Ensure the servers and tools above are installed
@@ -627,8 +632,8 @@ require("lazy").setup({
 				--
 				-- You can use a sub-list to tell conform to run *until* a formatter
 				-- is found.
-				javascript = { { "prettierd", "prettier" } },
-				typescript = { { "prettier" } },
+				javascript = { "prettier" },
+				typescript = { "prettier" },
 			},
 		},
 	},
@@ -731,22 +736,20 @@ require("lazy").setup({
 		-- change the command in the config to whatever the name of that colorscheme is
 		--
 		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
-		"0xstepit/flow.nvim",
+		"shaunsingh/nord.nvim",
 		lazy = false, -- make sure we load this during startup if it is your main colorscheme
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			-- Load the colorscheme here
-			vim.cmd.colorscheme("flow")
+			vim.cmd.colorscheme("nord")
 
 			-- You can configure highlights by doing something like
 			vim.cmd.hi("Comment gui=none")
 		end,
 		opts = function()
 			return {
-				transparent = false, -- Set transparent background.
-				fluo_color = "pink", --  Fluo color: pink, yellow, orange, or green.
-				mode = "normal", -- Intensity of the palette: normal, bright, desaturate, or dark. Notice that dark is ugly!
-				aggressive_spell = false, -- Display colors for spell check.
+				nord_contrast = true,
+				nord_borders = true,
 			}
 		end,
 	},
