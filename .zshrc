@@ -14,6 +14,7 @@ eval "$(starship init zsh)"
 if [ "$(uname 2> /dev/null)" = "Linux" ]; then
     # LINUX CONFIG
     echo "LINUX CONFIG"
+
     export PATH="$PATH:/opt/nvim-linux64/bin"
     . "$HOME/.cargo/env"
     export NVM_DIR="$HOME/.nvm"
@@ -22,6 +23,27 @@ if [ "$(uname 2> /dev/null)" = "Linux" ]; then
 
     export PATH=$PATH:/usr/local/go/bin
     export PATH=$PATH:/snap/bin
+
+    #For Gleam install
+    . "$HOME/.asdf/asdf.sh"
+
+    # append completions to fpath
+    fpath=(${ASDF_DIR}/completions $fpath)
+
+    # initialise completions with ZSH's compinit
+    autoload -Uz compinit && compinit
+
+    export PATH=/home/danielesc/.cache/rebar3/bin:$PATH
+
+    #Conda
+    # >>> conda initialize >>>
+    export PATH="/home/danielesc/miniconda3/bin:$PATH"  # commented out by conda initialize
+    # >>> conda initialize >>>
+
+    # things for conda
+    source activate base
+    conda activate py312
+
 else
     # MAC CONFIG
     echo "MAC CONFIG"
@@ -38,7 +60,7 @@ else
         eval "$__conda_setup"
     else
         if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
-            . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+# . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
         else
             export PATH="/opt/homebrew/anaconda3/bin:$PATH"
         fi
