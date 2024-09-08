@@ -66,3 +66,7 @@ ref https://github.com/rebelot/kanagawa.nvim/blob/master/extras/windows_terminal
         "name": "KanagawaDragon",
         "selectionBackground": "#223249"
     }
+
+
+Kitty theme
+$ curl -o ~/.config/kitty/nord.conf https://raw.githubusercontent.com/connorholyday/nord-kitty/master/nord.conf
