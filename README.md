@@ -38,3 +38,11 @@ Better top for monitoring stuffs
 ```
 brew install btop
 ```
+
+### RIPGREP
+
+[Github](https://github.com/BurntSushi/ripgrep#installation)
+
+```
+brew install ripgrep
+```

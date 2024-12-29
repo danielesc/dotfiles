@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-stow *
+stow zsh
+stow starship
+stow nvim

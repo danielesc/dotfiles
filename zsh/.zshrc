@@ -14,11 +14,15 @@ alias l.="eza -a | grep -E '^\.'"
 alias wapi='~/work/api'
 alias wfe='~/work/fe'
 alias wbes='~/work/back-end-shared'
+alias dotfiles='~/dotfiles'
+
 
 ## Open directly in nvim
-alias nvim-wapi='nvim ~/work/api'
-alias nvim-wfe='nvim ~/work/fe'
-alias nvim-wbes='nvim ~/work/backend-shared'
+alias xwapi='nvim ~/work/api'
+alias xwfe='nvim ~/work/fe'
+alias xwbes='nvim ~/work/backend-shared'
+alias xdotfiles='nvim ~/dotfiles'
+
 
 alias c='clear'
 
