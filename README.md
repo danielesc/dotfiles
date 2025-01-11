@@ -2,12 +2,21 @@
 
 ## SETUP STOW
 
-```zsh
+```bash
 brew install stow
 ```
 
-
 ## Additional tools
+
+### ZSH plugins
+
+#### Autosuggestions
+
+https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+
+```bash
+brew install zsh-autosuggestions
+```
 
 
 ### Eza
@@ -15,7 +24,7 @@ Better ls
 
 [Github](https://github.com/aristocratos/btop)
 
-```zsh
+```bash
 #mac
 brew install eza
 
@@ -25,7 +34,7 @@ brew install eza
 Renders markdown in the terminal
 
 [Github](https://github.com/aristocratos/btop)
-```zhs
+```bash
 brew install glow
 ```
 
@@ -35,7 +44,7 @@ Better top for monitoring stuffs
 
 [Github](https://github.com/aristocratos/btop)
 
-```
+```bash
 brew install btop
 ```
 
@@ -43,6 +52,6 @@ brew install btop
 
 [Github](https://github.com/BurntSushi/ripgrep#installation)
 
-```
+```bash
 brew install ripgrep
 ```
