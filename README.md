@@ -74,3 +74,12 @@ brew install btop
 ```bash
 brew install ripgrep
 ```
+
+### BAT
+Better CAT
+
+[Github](https://github.com/sharkdp/bat)
+
+```
+brew install bat
+```

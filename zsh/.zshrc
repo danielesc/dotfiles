@@ -10,12 +10,14 @@ alias lS='eza -1 --color=always --group-directories-first --icons'
 alias lt='eza --tree --level=2 --color=always --group-directories-first --icons'
 alias l.="eza -a | grep -E '^\.'"
 
+#replace cat with bat
+alias cat='bat'
+
 ## Work folder cds
 alias wapi='~/work/api'
 alias wfe='~/work/fe'
 alias wbes='~/work/back-end-shared'
 alias dotfiles='~/dotfiles'
-
 
 ## Open directly in nvim
 alias xwapi='nvim ~/work/api'
@@ -23,11 +25,10 @@ alias xwfe='nvim ~/work/fe'
 alias xwbes='nvim ~/work/backend-shared'
 alias xdotfiles='nvim ~/dotfiles'
 
-
 alias c='clear'
-
 alias zshconfig='nvim ~/dotfiles/zsh/.zshrc'
 alias sourcezsh='source ~/.zshrc'
+alias lzg='lazygit'
 
 # zsh plugins
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
