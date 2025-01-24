@@ -1,3 +1,7 @@
+if [ -f ~/.env_vars ]; then
+    source ~/.env_vars
+fi
+
 # ALIASES CHIDOS
 ## change ls to eza
 alias ls='eza --color=always --group-directories-first --icons'
