@@ -1,3 +1,5 @@
+export THEME_MODE="DARK_MODE"
+
 if [ -f ~/.env_vars ]; then
     source ~/.env_vars
 fi
@@ -16,6 +18,7 @@ alias l.="eza -a | grep -E '^\.'"
 
 #replace cat with bat
 alias cat='bat'
+alias catc='cat'
 
 ## Work folder cds
 alias wapi='~/work/api'
@@ -34,9 +37,17 @@ alias zshconfig='nvim ~/dotfiles/zsh/.zshrc'
 alias sourcezsh='source ~/.zshrc'
 alias lzg='lazygit'
 
+# CHANGE THEME
+alias toggle_theme='source ./toggleMode.sh'
+alias current_theme='echo "$THEME_MODE"'
+
 # zsh plugins
+source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 #Variables
 export EDITOR=nvim
@@ -46,3 +57,30 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 
 eval "$(starship init zsh)"
+
+# bun completions
+[ -s "/Users/sonatafy/.bun/_bun" ] && source "/Users/sonatafy/.bun/_bun"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/sonatafy/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/sonatafy/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/sonatafy/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/sonatafy/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# pnpm
+export PNPM_HOME="/Users/sonatafy/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

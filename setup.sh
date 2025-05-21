@@ -2,3 +2,5 @@
 stow zsh
 stow starship
 stow nvim
+stow ghostty
+stow tmux

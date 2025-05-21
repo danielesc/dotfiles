@@ -36,7 +36,16 @@ brew install zsh-syntax-highlighting
 ## add to .zsh to MAC os
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
+#### zsh-history-substring-search
 
+https://github.com/zsh-users/zsh-history-substring-search
+
+NOTE: has to be after syntax hihglight
+
+```bash
+brew install zsh-history-substring-search
+source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh'
+```
 
 ### Eza
 Better ls
@@ -82,4 +91,12 @@ Better CAT
 
 ```
 brew install bat
+```
+
+
+
+## TMUX
+install tpm
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
