@@ -5,6 +5,13 @@ if [ -f ~/.env_vars ]; then
 fi
 
 # ALIASES CHIDOS
+
+## Edits
+alias v='nvim .'
+alias editzsh='nvim ~/dotfiles/zsh/.zshrc'
+alias editnvim='nvim ~/dotfiles/nvim/.config/nvim/init.lua';
+alias edittmux='nvim ~/dotfiles/tmux/.tmux.conf';
+
 ## change ls to eza
 alias ls='eza --color=always --group-directories-first --icons'
 alias ll='eza -la --icons --octal-permissions --group-directories-first'
@@ -17,8 +24,7 @@ alias lt='eza --tree --level=2 --color=always --group-directories-first --icons'
 alias l.="eza -a | grep -E '^\.'"
 
 #replace cat with bat
-alias cat='bat'
-alias catc='cat'
+alias ccat='bat'
 
 ## Work folder cds
 alias wapi='~/work/api'
