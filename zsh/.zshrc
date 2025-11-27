@@ -49,9 +49,13 @@ alias toggle_theme='source ./toggleMode.sh'
 alias current_theme='echo "$THEME_MODE"'
 
 # zsh plugins
+if [ "$(uname)" = "Darwin" ]; then
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+    echo "linux"
+fi
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
