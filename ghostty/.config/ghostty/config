@@ -1,0 +1,12 @@
+theme = dark:/Users/sonatafy/dotfiles/ghostty/.config/ghostty/kanagawa-dragon, light:/Users/sonatafy/dotfiles/ghostty/.config/ghostty/kanagawa-lotus
+cursor-invert-fg-bg = true
+font-family = "Iosevka"
+
+font-feature = liga
+font-feature = calt
+font-feature = clig
+font-feature = dlig
+
+font-style-bold = false
+font-style-italic = false
+font-style-bold-italic = false
